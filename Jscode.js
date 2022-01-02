@@ -90,9 +90,9 @@ function print_dict(dct){
     for (i = 1; i < 4; i++) {
         result += `group ${i} => `
         for (n = 0; n < dct[i].length; n++){
-            result += `${dct[i][n]}, `
+            result += `${dct[i][n]} - `
         }   
-        result += "</br>"
+        result = result.slice(0, -2) + "</br>"
     }
 
     return result
